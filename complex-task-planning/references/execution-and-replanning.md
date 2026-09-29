@@ -59,7 +59,7 @@ A result can succeed technically (no error) and still fail the contract. Treat t
 2. **List invalidated items**: assumptions, tasks, and outputs that no longer hold.
 3. **Keep valid work.** Don't restart from scratch unless most of the plan is invalid.
 4. **Update the task list**: add, drop, reorder, and redo only the affected subtree.
-5. **Re-check dependencies and parallelism** (run `scripts/check_plan.py` again for written plans).
+5. **Re-check dependencies and parallelism** (run `scripts/check_plan.mjs` again for written plans).
 6. **Check the goal is unchanged.** If the objective or success criteria change, that's a scope change: inform the user, and get agreement if they're present.
 7. Continue.
 

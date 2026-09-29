@@ -108,7 +108,7 @@ The plan identifies:
 - **Fallbacks** for the riskiest tasks.
 - **Budget and stopping conditions**: maximum retries per task (default 2), and when to stop and report instead of pushing on.
 
-For Full-level tasks, write the plan using `assets/plan-template.md`. Validate its structure with `python3 scripts/check_plan.py plan.json`, which catches missing dependencies and cycles, shows the parallel waves, and flags tasks with no checks. When the user is present and the plan is expensive or irreversible, share a short version before executing. Otherwise start, and state the plan in one or two lines.
+For Full-level tasks, write the plan using `assets/plan-template.md`. Validate its structure with `node scripts/check_plan.mjs plan.json`, which catches missing dependencies and cycles, shows the parallel waves, and flags tasks with no checks. When the user is present and the plan is expensive or irreversible, share a short version before executing. Otherwise start, and state the plan in one or two lines.
 
 ## 6. Execute and observe
 
@@ -185,4 +185,4 @@ Match the depth of validation to the stakes. For high-stakes output, check it in
 | `references/validation.md` | Before completing: checks by output type, evaluator rubrics |
 | `references/examples.md` | Calibrating how much to plan; end-to-end examples |
 | `assets/plan-template.md` | Writing a Full-level plan (Markdown and JSON forms) |
-| `scripts/check_plan.py` | Checking a JSON plan for cycles, missing dependencies, parallel waves, and missing checks |
+| `scripts/check_plan.mjs` | Checking a JSON plan for cycles, missing dependencies, parallel waves, and missing checks |

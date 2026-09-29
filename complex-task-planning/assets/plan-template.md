@@ -42,7 +42,7 @@ Wave 2: T3
 - Retries per operation: 2. Evaluator rounds: 2. Stop and escalate if: <condition>.
 ```
 
-## JSON form (for `scripts/check_plan.py`)
+## JSON form (for `scripts/check_plan.mjs`)
 
 This is an excerpt: a full plan would add the remaining tasks and a final `check` task. Run as-is, the checker correctly warns that SC2–SC4 aren't covered and that there's no validation task.
 
