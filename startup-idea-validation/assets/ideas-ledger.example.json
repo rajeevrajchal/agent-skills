@@ -1,0 +1,55 @@
+{
+  "founder": {
+    "skills": ["TypeScript", "Svelte", "Node.js", "Supabase", "AWS"],
+    "hours_per_week": 10,
+    "goal": "side income €2–3k MRR within 18 months",
+    "location": "EU",
+    "access": ["indie dev communities"],
+    "no_gos": ["regulated health/finance", "enterprise sales"]
+  },
+  "ideas": [
+    {
+      "id": "I1",
+      "title": "Exercise-program sender for independent physiotherapists (DK)",
+      "problem": "Independent physiotherapists spend hours making exercise program PDFs that patients lose; generic apps lack Danish and clinic workflow",
+      "target_user": "Independent physiotherapy clinics in Denmark, 1-5 therapists",
+      "competitors": ["Physitrack", "generic PDF templates"],
+      "gates": { "G1": "pass", "G2": "unknown", "G3": "pass", "G4": "pass", "G5": "pass" },
+      "scores": {
+        "severity": { "score": 6, "evidence": "research", "note": "Forum complaints about manual PDFs" },
+        "frequency": { "score": 8, "evidence": "research", "note": "Weekly, per patient" },
+        "willingness_to_pay": { "score": 6, "evidence": "research", "note": "Clinics pay for Physitrack-like tools" },
+        "market_sufficiency": { "score": 5, "evidence": "assumption", "note": "~150 customers needed; reachable clinics unknown" },
+        "competitive_openness": { "score": 5, "evidence": "research", "note": "Established incumbent, mixed reviews on price" },
+        "differentiation": { "score": 6, "evidence": "assumption", "note": "Local language and clinic system integration" },
+        "reachability": { "score": 5, "evidence": "assumption", "note": "Association newsletter? unverified" },
+        "build_feasibility": { "score": 8, "evidence": "assumption", "note": "CRUD + PDF + email, within stack" },
+        "time_to_mvp": { "score": 7, "evidence": "assumption", "note": "~8 weeks at 10h/week" },
+        "retention": { "score": 7, "evidence": "assumption", "note": "Weekly workflow" },
+        "monetization": { "score": 6, "evidence": "research", "note": "€30–60/clinic/month comparable" },
+        "defensibility": { "score": 4, "evidence": "assumption", "note": "Niche depth only" }
+      },
+      "sources": [
+        { "claim": "Incumbent pricing", "label": "F", "url": "https://example.com/pricing", "date": "2026-10-08" }
+      ]
+    },
+    {
+      "id": "I2",
+      "title": "AI meeting summarizer for everyone",
+      "problem": "People forget what was said in meetings",
+      "target_user": "Everyone who has meetings",
+      "competitors": [],
+      "gates": { "G1": "fail", "G2": "unknown", "G3": "pass", "G4": "pass", "G5": "unknown" },
+      "scores": {}
+    },
+    {
+      "id": "I3",
+      "title": "Exercise PDF builder for physios",
+      "problem": "Physiotherapists spend hours making exercise program PDFs for patients",
+      "target_user": "Independent physiotherapy clinics",
+      "merged_into": "I1",
+      "gates": { "G1": "pass", "G2": "unknown", "G3": "pass", "G4": "pass", "G5": "pass" },
+      "scores": {}
+    }
+  ]
+}
