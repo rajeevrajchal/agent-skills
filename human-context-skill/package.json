@@ -1,0 +1,17 @@
+{
+  "name": "human-context-skill-tooling",
+  "private": true,
+  "type": "module",
+  "description": "Build, typecheck, and test tooling for the human-context Agent Skill. The skill itself has no dependencies.",
+  "engines": { "node": ">=22.6" },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "npm run build && node --experimental-strip-types --no-warnings --test tests/check-skill.test.mts",
+    "validate": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

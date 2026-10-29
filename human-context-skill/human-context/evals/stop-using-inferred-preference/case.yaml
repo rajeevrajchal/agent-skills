@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: stop-using-inferred-preference
+expected_outcome: |
+  Gives a thorough multi-part explanation and drops the terseness assumption without defending it.

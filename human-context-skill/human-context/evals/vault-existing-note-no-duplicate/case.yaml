@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: vault-existing-note-no-duplicate
+expected_outcome: |
+  Finds the existing CQRS note, tells the user, and offers or makes only a small additive change. No duplicate note.
+context:
+  scaffold_script: place-files.sh

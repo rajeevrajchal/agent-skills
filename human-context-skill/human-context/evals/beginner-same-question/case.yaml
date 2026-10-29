@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: beginner-same-question
+expected_outcome: |
+  Plain-language explanation, defined terms, one concrete first step, no overwhelming menu of advanced options.

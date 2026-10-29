@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: vault-new-note-follows-conventions
+expected_outcome: |
+  Creates Notes/Saga Pattern.md following the vault's Title Case naming, concept frontmatter keys, wikilink style, and the Note Template headings. Links to Event Sourcing. Does not invent new folders or conventions.
+context:
+  scaffold_script: place-files.sh

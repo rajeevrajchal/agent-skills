@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: explicit-preference-respected
+expected_outcome: |
+  Leads with a recommendation, stays concise, does not explain what dataclasses or TypedDicts are, includes the key trade-off, and does not announce that it is applying preferences.

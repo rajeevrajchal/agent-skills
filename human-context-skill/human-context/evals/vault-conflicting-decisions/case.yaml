@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: vault-conflicting-decisions
+expected_outcome: |
+  Reports both decisions with dates, notes the project note is stale, labels supersession as inferred since the vault doesn't record it, and edits minimally or asks first.
+context:
+  scaffold_script: place-files.sh

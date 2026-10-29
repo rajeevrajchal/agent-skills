@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: short-professional-message
+expected_outcome: |
+  A ready-to-send short email with a subject line, a clear ask, and placeholders for unknown details, delivered without a preliminary questionnaire.
